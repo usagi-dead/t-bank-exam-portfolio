@@ -1,10 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="font.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-</body>
+    <body>
+        <section class="main-container">
+            <header>
+                <img src="media/avatar/karthik.png" alt="avatar" class="avatar" />
+
+                <div class="block">
+                    <h3>Hello 👋🏻 I’m</h3>
+
+                    <div>
+                        <h1 class="bold">Karthik SR</h1>
+                        <h2 class="gray">UX/UI Designer</h2>
+                    </div>
+                </div>
+
+                <div class="block flex">
+                    <h1>Languages</h1>
+
+                    <!-- Используем CSS Grid для расположения элементов -->
+                    <div class="languages-container">
+                        <!-- Английский -->
+                        <div class="language-item">
+                            <h3>English</h3>
+                            <div class="language-fill" style="--progress: var(--english);"></div>
+                        </div>
+
+                        <!-- Малаялам -->
+                        <div class="language-item">
+                            <h3>Malayalam</h3>
+                            <div class="language-fill" style="--progress: var(--malayalam);"></div>
+                        </div>
+
+                        <!-- Хинди -->
+                        <div class="language-item">
+                            <h3>Hindi</h3>
+                            <div class="language-fill" style="--progress: var(--hindi);"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+    </body>
 </html>
