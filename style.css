@@ -270,3 +270,27 @@ footer .right-container {
     border-radius: 200px;
     white-space: nowrap;
 }
+
+.download-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover:not(:disabled) {
+    background-color: var(--second-accent);
+}
+
+.download-btn:hover {
+    background-color: var(--second-accent);
+}
