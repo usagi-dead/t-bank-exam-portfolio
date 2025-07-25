@@ -2,10 +2,11 @@
     --gray: #f0f0f0;
     --dark-gray: #5c5c5c;
     --accent: #28d979;
+    --second-accent: #149063;
 
     --border-radius: 32px;
     --padding: 24px;
-    --gap: 32px;
+    --gap: 24px;
     --content-width: 1100px;
 
     --english: 100;
@@ -124,13 +125,13 @@ header .block {
     width: calc(var(--progress) * 1%);
 }
 
-.experience-block {
+.flex-block {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
 }
 
-.experience-content {
+.block-content {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -145,17 +146,17 @@ header .block {
     color: white;
 }
 
-.experience-content .title {
-    max-width: 300px;
-    min-width: 300px;
+.block-content .title {
+    max-width: 280px;
+    min-width: 280px;
 }
 
-.experience-content ul {
+.block-content ul {
     padding: 0;
     margin: 0;
 }
 
-.experience-content .text-container {
+.block-content .text-container {
     display: flex;
 }
 
@@ -164,10 +165,73 @@ header .block {
 }
 
 .float {
-    background-color: rgba(126, 115, 18, 0.4);
-    color: #DDF163;
     position: absolute;
     right: 20px;
+}
+
+.float.text {
+    background-color: rgba(126, 115, 18, 0.4);
+    color: #ddf163;
     padding: 4px 12px;
     border-radius: 30px;
+}
+
+footer {
+    display: flex;
+    gap: var(--gap);
+}
+
+footer .flex-block {
+    flex: 1;
+    height: fit-content;
+}
+
+footer .right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.float.heart svg {
+    width: 24px;
+    height: 24px;
+}
+
+.education-block {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: var(--gap);
+}
+
+.education-block .block-content {
+    height: fit-content;
+}
+
+.second-accent-clr {
+    color: var(--second-accent);
+}
+
+.tags-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 20px;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 200px;
+    height: fit-content;
+}
+
+.contact-block {
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+.contact-block p {
+    font-size: 20px;
 }
